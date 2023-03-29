@@ -1,12 +1,6 @@
 <template>
-    <div class='flex items-center rounded-md w-full h-full bg-white'>
-        <div class='hero-text text-left w-full dark:text-zinc-500 pl-20'>
-            <div class='text-[3.5em] font-bold'>From Design <br/> to Digital to <br/> Social</div>
-            <p class='text-2xl'>"Get the Full Marketing Experience with us"</p>
-        </div>
-        <div class="w-full">
-            <img src='https://assets.website-files.com/635eef6e7b758d76dcd6ef59/63c98f3daa4956066471d8ab_hero.png' alt='sample-image' class='w-full h-[calc(100vh-60px)] object-cover rounded'>
-        </div>
+    <div class='w-full h-full bg-white'>
+        <video src="../../assets/first-slide.mp4" class="w-full h-[calc(100vh-60px)] object-cover" autoplay muted playsinline loop></video>
     </div>
 </template>
 

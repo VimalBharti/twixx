@@ -1,5 +1,5 @@
 <template>
-    <nav class='w-full py-3 h-[60px] border-b border-zinc-50 bg-white backdrop-blur-lg'>
+    <nav class='w-full py-3 h-[60px] bg-white backdrop-blur-lg fixed top-0'>
         <div class='w-full px-6 flex justify-between mx-auto'>
             <div class='logo flex gap-3 items-center'>
                 <!-- <router-link to="/">Twixx</router-link> -->

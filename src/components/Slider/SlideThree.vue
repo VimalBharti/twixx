@@ -1,19 +1,10 @@
 <template>
-    <div class='flex items-center px-6 rounded-md w-full h-[calc(100vh-60px)] overflow-hidden'>
-        <div class='hero-text text-left w-full text-zinc-800 px-12'>
-            <div class='text-[3.5em] font-bold'>
-                Content is the key
-            </div>
-            <p class="text-2xl">"We will create your story <br/> with our content"</p>
-            <button class="bg-blue-600 text-white px-8 py-3 mt-12">Know More</button>
-        </div>
-        <div class="relative w-full h-full">
-            <video 
-                src="../../assets/content.mp4" 
-                class="w-full object-contain h-full relative"
-                autoplay muted playsinline loop
-            ></video>
-        </div>
+    <div class='flex items-center rounded-md w-full h-[calc(100vh-60px)] overflow-hidden'>
+        <video 
+            src="../../assets/content-marketing.mp4" 
+            class="w-full object-contain h-full"
+            autoplay muted playsinline loop
+        ></video>
     </div>
 </template>
 

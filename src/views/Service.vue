@@ -5,7 +5,7 @@
         
                 <div class="text-[4em] font-bold leading-[1.2em]">Our <br/> Services</div>
             </div>
-            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350" class="blobService">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350" class="blobService bg-gradient-to-r from-[#F29C40] via-[#EB7BB1] to-[#877EBB] rounded-full">
                 <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
             </svg>
         </div>
@@ -14,40 +14,40 @@
             <p class="mt-3">At Twixx, we offer a range of services to help you grow your business.</p>
             <!-- <hr class="my-8" /> -->
             <div class="gallery grid grid-cols-3 gap-6 mt-10">
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/content-marketing.png" alt="" class="h-28 w-full object-contain">
-                    <div>Content Marketing</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/content-marketing.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Content Marketing</div>
                 </div>
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/Graphic.png" alt="" class="h-28 w-full object-contain">
-                    <div>Graphic</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/Graphic.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Graphic</div>
                 </div>
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/influencer-marketing.png" alt="" class="h-28 w-full object-contain">
-                    <div>Influencer Marketing</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/influencer-marketing.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Influencer Marketing</div>
                 </div>
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/Logo-Designing.png" alt="" class="h-28 w-full object-contain">
-                    <div>Logo Designing</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/Logo-Designing.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Logo Designing</div>
                 </div>
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/SEO.png" alt="" class="h-28 w-full object-contain">
-                    <div>Search Engine Optimization</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/SEO.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Search Engine Optimization</div>
                 </div>
-                <div class="flex flex-col items-center gap-3 border rounded-xl py-10">
-                    <img src="../assets/social-media-marketing.png" alt="" class="h-28 w-full object-contain">
-                    <div>Social Media Marketing</div>
+                <div class="flex flex-col items-center gap-3 border rounded-xl py-10 group cursor-pointer">
+                    <img src="../assets/social-media-marketing.png" alt="" class="h-28 w-full object-contain img">
+                    <div class="group-hover:scale-110 transition duration-700 ease-in-out">Social Media Marketing</div>
                 </div>
             </div>
         </div>
 
         <!-- Scroll-btn -->
-        <div class="scroll-btn absolute bottom-4 ml-[50%] translate-x-[-50%] flex flex-col justify-center items-center text-zinc-700">
+        <!-- <div class="scroll-btn absolute bottom-4 ml-[50%] translate-x-[-50%] flex flex-col justify-center items-center text-zinc-700">
             Scroll down <br/>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 animate-bounce text-zinc-800">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
             </svg>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -75,11 +75,9 @@
     top: 0em;
     left: -12em;
     /* z-index: -1; */
-    width: 28vmax;
+    width: 30vmax;
     animation: move 10s ease-in-out infinite;
-    fill: #820dd0;  /* fallback for old browsers */
-    fill: -webkit-linear-gradient(to right, #f7b733, #820dd0);  /* Chrome 10-25, Safari 5.1-6 */
-    fill: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    fill: transparent;
 
 }
 @keyframes move {
@@ -89,5 +87,20 @@
   78%  { transform: scale(1) translate(0vw, 5vh) rotate(-1deg); }
   80%  { transform: scale(1) translate(0vw, 5vh) rotate(-1deg); }
   100% { transform: scale(1) translate(2px, 6px); }
+}
+
+.img:hover {
+  animation: shake 0.6s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 </style>
