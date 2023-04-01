@@ -18,14 +18,19 @@
             </div>
             <div class="w-2/3">
                 <h2 class="font-bold text-2xl uppercase mb-3">Queries Here</h2>
-                <div class="shadow-lg rounded-lg p-10 flex flex-col items-start bg-white">
-                    <input type="text" placeholder="Name" class="px-3 py-4 w-full mb-5 border border-zinc-300 rounded">
-                    <select name="" class="px-3 py-4 w-full mb-5 border border-zinc-300 rounded">
-                        <option value="">Development</option>
-                        <option value="">Designing</option>
-                    </select>
-                    <input type="email" placeholder="Email" class="px-3 py-4 w-full mb-5 border border-zinc-300 rounded">
-                    <input type="text" placeholder="Query" class="px-3 py-4 w-full mb-5 border border-zinc-300 rounded">
+                <div class="shadow-lg rounded-lg p-8 flex flex-col items-start bg-white">
+                    <input type="text" placeholder="Name" class="px-3 py-3 w-full mb-5 border border-zinc-300 rounded">
+                    <input type="email" placeholder="Email" class="px-3 py-3 w-full mb-5 border border-zinc-300 rounded">
+                    <input type="text" placeholder="Query" class="px-3 py-3 w-full mb-5 border border-zinc-300 rounded">
+                    <div class="mb-8">
+                        <h3 class="mb-4 font-semibold text-sm text-zinc-800">Select Services</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex items-center" v-for="service in services" :key="service">
+                                <input :id="service.id" type="checkbox" :value="service.name" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                <label :for="service.id" class="ml-2 text-sm font-medium text-zinc-600">{{ service.name }}</label>
+                            </div>
+                        </div>
+                    </div>
                     <button class=" px-12 py-3 bg-zinc-800 text-white border rounded block">Submit</button>
                 </div>
             </div>
@@ -33,6 +38,19 @@
         </div>
     </section>
 </template>
+
+<script setup>
+    import { ref } from 'vue';
+
+    const services = ref([
+        {id: 1, name: 'SEO'},
+        {id: 2, name: 'Content marketing'},
+        {id: 3, name: 'Logo Design'},
+        {id: 4, name: 'Web Design'},
+        {id: 5, name: 'Illustration'},
+        {id: 6, name: 'Influencer Marketing'}
+    ])
+</script>
 
 
 <style scoped>

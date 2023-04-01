@@ -2,7 +2,7 @@
     <div class='flex items-center rounded-md w-full h-[calc(100vh-60px)] overflow-hidden'>
         <video 
             src="../../assets/content-marketing.mp4" 
-            class="w-full object-contain h-full"
+            class="w-full object-cover h-full"
             autoplay muted playsinline loop
         ></video>
     </div>

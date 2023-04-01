@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[calc(100vh-60px)] relative">
+    <div class="md:h-[calc(100vh-60px)] relative">
         <!-- <carousel :items-to-show="1" :autoplay="5000" :wrap-around="true"> -->
         <carousel :items-to-show="1" :wrap-around="true">
             <slide v-for="slide in slides" :key="slide">
@@ -34,7 +34,11 @@
     import SlideFive from "../components/Slider/SlideFive.vue"
 
     const slides = shallowRef([
-        SlideOne, SlideTwo, SlideThree, SlideFour, SlideFive
+        SlideOne, 
+        SlideTwo, 
+        SlideThree, 
+        SlideFour, 
+        SlideFive
     ])
 
 </script>
